@@ -1,0 +1,53 @@
+.header-wrapper {
+  .advertisement {
+    height: 48px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    .logo {
+      img {
+        height: 90px;
+        width: 220px;
+      }
+    }
+    .store {
+       a{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-left: 1.5rem;
+       }
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .user-setting{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      gap : 10px;
+      padding-right: 1.5rem;
+        img{
+            height: 16px;
+            width: 16px;
+        }
+    }
+  }
+}

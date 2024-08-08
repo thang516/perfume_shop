@@ -1,0 +1,106 @@
+.advertisement-wrapper {
+  background-color: rgb(240, 92, 98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 90px 0px;
+
+  .advertisement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Lexend, sans-serif;
+    text-transform: uppercase;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 500;
+      font-family: Lexend, sans-serif;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(28, 29, 30);
+      font-size: 22px;
+      font-weight: 500;
+      font-family: Lexend, sans-serif;
+    }
+  }
+  .home-cd-loop {
+    display: flex;
+    justify-content: space-between;
+    .days {
+      width: 150px;
+      height: 100px;
+      background: white;
+      margin-left: 20px;
+      .number-home-cd {
+        font-size: 40px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .hours {
+      width: 150px;
+      height: 100px;
+      margin-left: 20px;
+      background: white;
+      .number-home-cd {
+        font-size: 40px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .minutes {
+      width: 150px;
+      height: 100px;
+      margin-left: 20px;
+      background: white;
+      .number-home-cd {
+        font-size: 40px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .seconds {
+      width: 150px;
+      margin-left: 20px;
+      height: 100px;
+      background: white;
+      .number-home-cd {
+        font-size: 40px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
