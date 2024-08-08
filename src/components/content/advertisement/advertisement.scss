@@ -35,71 +35,142 @@
       font-family: Lexend, sans-serif;
     }
   }
-  .home-cd-loop {
+  .home-cd-wrap {
+    margin-top: 40px;
+    .home-cd-loop {
+      display: flex;
+      justify-content: space-between;
+      .days {
+        width: 150px;
+        height: 100px;
+        background: white;
+        margin-left: 20px;
+        .number-home-cd {
+          font-size: 40px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+          color: rgb(92, 92, 92);
+        }
+        .text-home-cd {
+          font-size: 20px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: rgb(92, 92, 92);
+        }
+      }
+      .hours {
+        width: 150px;
+        height: 100px;
+        margin-left: 20px;
+        background: white;
+        .number-home-cd {
+          font-size: 40px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          color: rgb(92, 92, 92);
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+        }
+        .text-home-cd {
+          font-size: 20px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: rgb(92, 92, 92);
+        }
+      }
+      .minutes {
+        width: 150px;
+        height: 100px;
+        margin-left: 20px;
+        background: white;
+        .number-home-cd {
+          font-size: 40px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          color: rgb(92, 92, 92);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+        }
+        .text-home-cd {
+          font-size: 20px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: rgb(92, 92, 92);
+        }
+      }
+      .seconds {
+        width: 150px;
+        margin-left: 20px;
+        height: 100px;
+        background: white;
+        .number-home-cd {
+          font-size: 40px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          color: rgb(92, 92, 92);
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 10px;
+        }
+        .text-home-cd {
+          font-size: 20px;
+          font-family: "Lexend", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: rgb(92, 92, 92);
+        }
+      }
+    }
+  }
+  .view-detail-wrap {
     display: flex;
-    justify-content: space-between;
-    .days {
-      width: 150px;
-      height: 100px;
-      background: white;
-      margin-left: 20px;
-      .number-home-cd {
-        font-size: 40px;
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-      }
-    }
-    .hours {
-      width: 150px;
-      height: 100px;
-      margin-left: 20px;
-      background: white;
-      .number-home-cd {
-        font-size: 40px;
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-      }
-    }
-    .minutes {
-      width: 150px;
-      height: 100px;
-      margin-left: 20px;
-      background: white;
-      .number-home-cd {
-        font-size: 40px;
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-      }
-    }
-    .seconds {
-      width: 150px;
-      margin-left: 20px;
-      height: 100px;
-      background: white;
-      .number-home-cd {
-        font-size: 40px;
-        font-family: "Lexend", sans-serif;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .view-detail-advertisement {
+      background-color: #a51e22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      width: 400px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        font-family: Lexend, sans-serif;
       }
     }
   }

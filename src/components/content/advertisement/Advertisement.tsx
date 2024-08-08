@@ -55,17 +55,20 @@ export const Advertisement: React.FC<AdvertisementProps> = ({ targetDate }) => {
                     </div>
                     <div className="minutes">
                         <div className="number-home-cd">{String(timeLeft.minutes).padStart(2, '0')}</div><div className="text-home-cd">Phút</div>
-                  </div>
+                    </div>
                     <div className="seconds">
                         <div className="number-home-cd">{String(timeLeft.seconds).padStart(2, '0')}</div> <div className="text-home-cd">Giây</div>
-                   </div>
+                    </div>
                 </div>
-                <a
-                    href="https://morra.com.vn/collections/6-years-of-love"
-                    style={{ background: "#a51e22", color: "#ffffff" }}
-                >
-                    Xem chi tiết tại đây
-                </a>
+                <div className="view-detail-wrap">
+                    <div className="view-detail-advertisement">
+                        <a
+                            href="https://morra.com.vn/collections/6-years-of-love"
+                        >
+                            Xem chi tiết tại đây
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </>

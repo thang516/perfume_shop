@@ -1,0 +1,43 @@
+.unique-mark-wrapper {
+    margin: 40px;
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: rgb(92, 92, 92);
+    text-transform: uppercase;
+  }
+  .unique-mark-contain-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .unique-mark-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        height: 300px;
+        width: 300px;
+      }
+      h3 {
+             color: #5c5c5c;;
+          font-family: Lexend, sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 0;
+      }
+      p{
+        color : #747474;
+        margin-top: 0;
+        font-size: 14px;
+        max-width: 304px;
+        text-align: center;
+      }
+    }
+  }
+}

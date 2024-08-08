@@ -1,0 +1,130 @@
+.perfume-by-scent-group-wrapper {
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Lexend, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 15px 0;
+        color: rgb(92, 92, 92);
+        text-transform: uppercase;
+    } 
+
+    }
+    .box-className{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .tab-scent-group{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: Lexend, sans-serif;
+        }
+    }
+    .cart-endow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .cart-endow-content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 270px;
+            width: 270px;
+            transition: opacity 0.3s ease-in-out;
+          }
+          .price-and-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 0;
+            .name-endow {
+              color: #5c5c5c;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 16px;
+              font-family: Lexend, sans-serif;
+            }
+            .price-endow {
+              display: flex;
+              gap: 10px;
+              font-weight: 400;
+              font-size: 13px;
+              .price-has-decreased {
+                color: #d0021b;
+              }
+              .original-price {
+                color: rgb(147, 147, 147);
+                text-decoration: line-through;
+              }
+            }
+          }
+          .percent-decrease {
+            position: absolute;
+            background-color: rgb(208, 2, 27);
+            color: white;
+            height: 30px;
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            top: 15px;
+            left: 30px;
+    
+            span {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+          &:hover .cart-endow-content-hover {
+            display: block;
+          }
+        }
+        .cart-endow-content:hover {
+          .cart-endow-content-hover {
+            display: block;
+          }
+        }
+        .cart-endow-content-hover {
+          display: none;
+        }
+      }
+
+
+
+    
+.view-detail-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .view-detail {
+      height: 50px;
+      width: 150px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: black;
+      span {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    &:hover {
+      .view-detail {
+        border: 1px solid black;
+        background-color: white;
+        span {
+          color: black;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
