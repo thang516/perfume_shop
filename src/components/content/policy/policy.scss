@@ -1,0 +1,26 @@
+
+
+.policy-wrapper{
+    background-color: #222222;
+    margin: 40px 0;
+    .foot-policy-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+        .foot-policy-item{
+            border: 1px solid white;
+            padding: 30px;
+          
+            a{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+}

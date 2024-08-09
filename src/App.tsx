@@ -6,6 +6,10 @@ import { Endow } from './components/content/Endow';
 import { Advertisement } from './components/content/advertisement/Advertisement';
 import { ScentGroup } from './components/content/scentgroup/ScentGroup';
 import { UniqueMark } from './components/content/uniquemark/UniqueMark';
+import { Collection } from './components/content/collection/Collection';
+import { News } from './components/content/news/News';
+import { Policy } from './components/content/policy/Policy';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   const now = new Date();
@@ -17,6 +21,10 @@ function App() {
       <Advertisement targetDate={targetDate}/>
       <ScentGroup/>
       <UniqueMark/>
+      <Collection/>
+      <News/>
+      <Policy/>
+      <Footer/>
     </>
   );
 }

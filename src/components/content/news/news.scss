@@ -1,0 +1,49 @@
+.news-wrapper {
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: rgb(92, 92, 92);
+    text-transform: uppercase;
+  }
+  .news-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    .news-contain {
+      img {
+        width: 350px;
+        height: auto;
+      }
+      .date-time-news {
+        display: flex;
+        justify-content: start;
+        p {
+          font-size: 13px;
+          font-size: 600;
+          color: #5c5c5c;
+          font-family: Lexend, sans-serif;
+        }
+      }
+      .title-news {
+        font-family: "Lexend", sans-serif;
+        color: #5c5c5c;
+        font-size: 19px;
+        font-weight: 500;
+        width: 348px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+      .description-news{
+        width: 350px;
+      }
+    }
+  }
+}

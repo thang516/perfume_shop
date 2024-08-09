@@ -1,0 +1,97 @@
+.collection-wrapper {
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: rgb(92, 92, 92);
+    text-transform: uppercase;
+  }
+  .collection-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .collection-content-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 250px;
+      }
+      .name-collection {
+        font-size: 16px;
+        padding: 10px 0;
+        font-weight: bold;
+        line-height: 16px;
+        color: #5c5c5c;
+        font-family: Lexend, sans-serif;
+      }
+      .price-collection {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .detail-price {
+          color: rgb(208, 2, 27);
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .origin-price {
+          color: rgb(147, 147, 147);
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: line-through;
+        }
+      }
+
+      .view-detail-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .view-detail {
+          height: 50px;
+          width: 250px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          background-color: black;
+          span {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        &:hover {
+          .view-detail {
+            border: 1px solid black;
+            background-color: white;
+            span {
+              color: black;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .collection-content-left {
+      display: flex;
+      justify-content: center;
+      img {
+        height: auto;
+        width: 500px;
+      }
+    }
+  }
+}
