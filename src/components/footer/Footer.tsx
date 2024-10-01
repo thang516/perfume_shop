@@ -1,10 +1,8 @@
-import google from "../../assets/img/google.png";
-import facebook from "../../assets/img/facebook.png";
-import skyper from "../../assets/img/video.png";
-import youtube from "../../assets/img/youtube.png";
-import twitter from "../../assets/img/twitter.png";
-import "./footer.scss"
-
+import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
+import GoogleIcon from '@mui/icons-material/Google';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import "./footer.scss";
 export const Footer = () => {
     return <>
         <div className="footer-wrapper">
@@ -21,21 +19,10 @@ export const Footer = () => {
                         </a>
                     </div>
                     <div className="social-list">
-
-                        <div className="fa fa-facebook"><img src={facebook} alt="" /></div>
-
-
-                        <div className="fa fa-google"><img src={google} alt="" /></div>
-
-
-                        <div className="fa fa-twitter"><img src={twitter} alt="" /></div>
-
-
-                        <div className="fa fa-youtube"><img src={youtube} alt="" /></div>
-
-
-                        <div className="fa fa-skype"><img src={skyper} alt="" /></div>
-
+                        <FacebookSharpIcon className="fa-icon-social-list" />
+                        <GoogleIcon className="fa-icon-social-list"/>
+                        <TwitterIcon className="fa-icon-social-list"/>
+                        <YouTubeIcon className="fa-icon-social-list"/>
                     </div>
                 </div>
                 <div className="policy-footer">
@@ -91,6 +78,9 @@ export const Footer = () => {
 
                 </div>
                 <div className="fanpage">
+                    {/* <div className="item-fanpage">
+                            <img src="" alt="" />
+                    </div> */}
                     <h4>FANPAGE</h4>
                 </div>
             </div>

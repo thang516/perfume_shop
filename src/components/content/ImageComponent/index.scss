@@ -1,0 +1,11 @@
+.image-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    img{
+        height: 170px;
+        width: 170px;
+    }
+}

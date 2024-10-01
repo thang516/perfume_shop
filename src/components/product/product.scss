@@ -1,0 +1,14 @@
+.product-wrapper {
+  .breadcrumbs-container {
+    padding: 15px 30px;
+    background: #f5f5f5;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+  }
+  .main-product {
+    display: flex;
+  }
+}

@@ -1,0 +1,97 @@
+.list-mainmenu {
+    list-style: none;
+    margin: 0;
+    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  
+    li {
+      position: relative;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+  
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 15px;
+  
+        &:hover {
+          color: palevioletred;
+        }
+  
+        i {
+          margin-left: 5px;
+        }
+      }
+  
+      &.has-submenu {
+        &:hover > .list-submenu {
+          display: block;
+        }
+  
+        .list-submenu {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          list-style: none;
+          background-color: #fff;
+          padding: 10px 0;
+          border: 1px solid #ddd;
+          min-width: 200px;
+          z-index: 1000;
+  
+          li {
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: lowercase;
+  
+            a {
+              padding: 10px 15px;
+              white-space: nowrap;
+  
+              &:hover {
+                background-color: #f8f9fa;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    margin-left: 10px;
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity 0.3s ease-in-out;
+  
+      &.icon-up {
+        opacity: 0;
+      }
+  
+      &.icon-down {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .has-submenu:hover .icon-wrapper .icon-up {
+    opacity: 1;
+  }
+  
+  .has-submenu:hover .icon-wrapper .icon-down {
+    opacity: 0;
+  }
+  

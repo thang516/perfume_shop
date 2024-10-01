@@ -1,0 +1,125 @@
+.blog-wrapper {
+  .item-blog {
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 0px;
+      color: #5c5c5c;
+    }
+    .description {
+      margin-left: 48px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #d7d7d7;
+      padding-bottom: 40px;
+      font-size: 14px;
+      span {
+        margin-bottom: 10px;
+        color: #5c5c5c;
+      }
+    }
+    .formation-history {
+      margin-left: 48px;
+      h3 {
+        font-size: 18px;
+        color: #5c5c5c;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .item-content-wrap {
+        .title-formation {
+          font-size: 28px;
+          color: #5c5c5c;
+        }
+        .content-formation {
+          ul {
+            li {
+              color: #5c5c5c;
+              font-size: 14px;
+              padding-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .manufacturing-proces {
+      margin-left: 48px;
+      h3 {
+        font-size: 18px;
+        color: #5c5c5c;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .title-manufacturing {
+        h3 {
+            margin: 0px;
+            margin-bottom: 13px;
+          font-size: 24px;
+          color: #5c5c5c;
+        }
+      }
+      .description-manufacturing{
+        font-size: 14px;
+        color: #5c5c5c;
+        margin-bottom: 10px;
+      }
+      .image-wrap{
+        display: flex;
+        align-items: center;
+        padding: 25px 30px;
+      }
+    }
+  }
+}
+
+
+
+
+.signature-perfume-wrap{
+    display: block;
+    
+    h1{
+        font-size: 30px;
+        color: #5c5c5c;
+
+    }
+    .content-perfume{
+    margin-bottom: 10px;
+    color: #5c5c5c;
+        font-size: 15px;
+    }
+}
+
+
+
+.perfume-code{
+    color: #5c5c5c;
+
+    h1{
+        font-size: 30px;
+        color: #5c5c5c;
+    }
+    .description-perfume-code{
+        div{
+            margin-bottom: 10px;
+
+        }
+    }
+    .content-perfume-code{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-perfume-code{
+        margin-top: 50px;
+        .waiting-for-you{
+            margin-top: 10px;
+        }
+        
+    }
+
+}
