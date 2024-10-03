@@ -24,43 +24,64 @@
       }
     }
     .store {
-       a{
+      a {
         text-decoration: none;
         color: black;
         display: flex;
         align-items: center;
         gap: 6px;
         padding-left: 1.5rem;
-       }
-        img{
-            height: 30px;
-            width: 30px;
-        }
+      }
+      img {
+        height: 30px;
+        width: 30px;
+      }
     }
-    .user-setting{
+    .user-setting {
       display: flex;
       flex-direction: row;
       align-items: center;
       text-align: center;
-      gap : 10px;
       padding-right: 1.5rem;
-        img{
-            height: 16px;
-            width: 16px;
+      img {
+        height: 16px;
+        width: 16px;
+      }
+      .user {
+        .dropdown {
+          .dropdown-toggle {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            background-color: transparent;
+            &::after {
+              display: none;
+            }
+          }
         }
+      }
+      .cart {
+        img {
+          height: 30px;
+          width: 30px;
+        }
+      }
     }
   }
-  .footer-header{
-    
-  }
 }
-.search-panel-wrap{
+.search-panel-wrap {
   padding: 60px 70px 250px;
-  .header-search{
+  .header-search {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    .search-panel{
+    .search-panel {
       font-size: 14px;
       text-transform: uppercase;
       margin: 3px 0 0 0;
@@ -68,8 +89,114 @@
       color: #5c5c5c;
     }
   }
-  #outlined-search{
+  #outlined-search {
     width: 280px;
   }
- 
+}
+
+.cart-panel-wrap {
+  padding: 60px 70px 250px;
+  .header-cart {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .name-cart-panel {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 3px 0 0 0;
+      font-weight: 500;
+      color: #5c5c5c;
+    }
+  }
+  .cart-container {
+    .item-cart {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 50px 0 20px 0;
+      border-bottom: 1px solid #eee;
+
+      img {
+        border: 1px solid #eee;
+      }
+      .wrap-content-cart {
+        display: flex;
+        flex-direction: column;
+
+        .name-product-in-cart {
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .variant {
+          font-size: 12px;
+          margin: 5px 0 8px;
+          opacity: 0.66;
+        }
+        .pro-view {
+          display: flex;
+          .pro-quantity-view {
+            background-color: #ededed;
+            font-size: 12px;
+            line-height: 1;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            width: 30px;
+          }
+          .pro-price-view {
+            color: #5c5c5c;
+            font-size: 500;
+            line-height: 26px;
+            opacity: 0.7;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .border-line {
+      border: 1.7px solid black;
+      display: block;
+    }
+
+    .total-money {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      color: #5c5c5c;
+    }
+  }
+  .footer-cart-wrap {
+    display: flex;
+    gap: 20px;
+    .button-detail {
+      height: 45px;
+      width: 150px;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+    }
+    .button-payment {
+      height: 45px;
+      width: 150px;
+      background-color: #d0021d;
+      color: white;
+      border: none;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      justify-content: center;
+    }
+  }
 }

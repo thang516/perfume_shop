@@ -1,4 +1,4 @@
-// import { Policy } from "@mui/icons-material";
+import { Cart } from "../../cart";
 import { Advertisement } from "../../content/advertisement/Advertisement";
 import { Collection } from "../../content/collection/Collection";
 import { Endow } from "../../content/Endow";
@@ -20,9 +20,9 @@ const HomePage = () => {
     <UniqueMark />
     <Collection />
     <News />
-    {/* <Policy /> */}
     <Policy/>
     <ImageComponent/>
+    <Cart/>
   </>
 }
 

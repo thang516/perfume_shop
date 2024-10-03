@@ -5,12 +5,13 @@ import * as React from 'react';
 import search from "../../assets/img/search-interface-symbol.png";
 import shopImage from "../../assets/img/shop.png";
 import user from "../../assets/img/user.png";
+import cartShopping from "../../assets/img/shopping-cart.png";
 import { Navbar } from "../content/navbar/Navbar";
 import "./header.scss";
 import CloseIcon from '@mui/icons-material/Close';
 import TextField from '@mui/material/TextField';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 export const Header = () => {
     const [state, setState] = React.useState({
         right: false,
@@ -42,6 +43,49 @@ export const Header = () => {
             </div>
         </Box>
     );
+    const cart = () => (
+        <Box
+            sx={{ width: 450 }}
+            role="presentation"
+            onClick={(event) => event.stopPropagation()}
+            onKeyDown={toggleDrawer(false)}
+        >
+            <div className="cart-panel-wrap">
+                <div className='header-cart'>
+                    <h2 className='name-cart-panel'>GIỎ HÀNG</h2>
+                    <div onClick={toggleDrawer(false)}><CloseIcon /></div>
+                </div>
+                <div className="cart-container">
+                    <div className="item-cart">
+                        <img src="https://product.hstatic.net/200000374707/product/22_20ml_b06670e9dfe34b11b871f2d6b3d814f3_small.png" alt="" />
+                        <div className="wrap-content-cart">
+                            <span className='name-product-in-cart'>Nước hoa No. 22</span>
+                            <span className="variant">20ml</span>
+                            <div className='pro-view'>
+                                <span className="pro-quantity-view">1</span>
+                                <span className="pro-price-view">850,000₫</span>
+                            </div>
+                        </div>
+                        <div><CloseIcon /></div>
+                    </div>
+                    <span className='border-line'></span>
+
+                    <div className='total-money'>
+                        <span>TỔNG TIỀN:</span>
+                        <span>2,600,00đ</span>
+                    </div>
+                </div>
+                <div className="footer-cart-wrap">
+                    <button className='button-detail'>
+                        <span>XEM GIỎ HÀNG</span>
+                    </button>
+                    <button className='button-payment'>
+                        <span>THANH TOÁN</span>
+                    </button>
+                </div>
+            </div>
+        </Box>
+    );
 
     return <>
         <div className="header-wrapper">
@@ -61,16 +105,15 @@ export const Header = () => {
                 </div>
                 <div className="user-setting">
                     <div className="user">
-                   
-                        <img src={user} alt="" />
                         <div className="dropdown">
-                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
+                            <button className="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src={user} alt="" />
                             </button>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                <li><a className="dropdown-item" href="#">User</a></li>
+                                <li><a className="dropdown-item" href="#">Login</a></li>
+
+                                <li><a className="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -86,6 +129,19 @@ export const Header = () => {
                             </Drawer>
                         </div>
 
+                    </div>
+                    <div className="cart">
+
+                        <div>
+                            <Button onClick={toggleDrawer(true)}><img src={cartShopping} alt="" /></Button>
+                            <Drawer
+                                anchor="right"
+                                open={state.right}
+                                onClose={toggleDrawer(false)}
+                            >
+                                {cart()}
+                            </Drawer>
+                        </div>
                     </div>
                 </div>
             </div>
