@@ -1,9 +1,9 @@
 
 
 export  const DetailPage = () => {
-    return <>
-            
-    
-    
-    </>
+    return <>   
+        <div className="detail-page-wrap">
+
+        </div>
+        </>
 }
